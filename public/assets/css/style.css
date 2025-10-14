@@ -1,0 +1,606 @@
+body{
+    margin-top: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    margin-top: 0px;
+    padding:0px;
+    font-family: 'Outfit', sans-serif;
+}
+#head{
+    position:absolute;
+    display:inline-flex;
+    align-items:center;
+    height:70px;
+    width:100%;
+    margin-top: 0px;
+    padding-top:0px;
+    justify-content: space-between;
+    box-shadow:0px 7px 5px rgb(228, 223, 223);
+    z-index:1;
+    background-color: white;
+
+}
+#Namesite{
+    align-items: center;
+    display:inline-flex;
+    background-image: linear-gradient(43deg,#008000 0%,#90EE90 46%,#4682B4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    align-content: space-between;
+}
+#GMOT{
+   padding-left: 40px;
+   font-size:xx-large;
+   font-weight:bolder;
+} 
+#ges{
+    font-size:medium;
+    font-weight:light;
+}   
+
+
+#ocplogo{
+    height: 60px;
+    width:60px; 
+}
+#imglogo{
+    padding-left :60px;
+    padding-right:60px;
+
+}
+
+#interface{
+    display:inline-flex;
+    justify-content: space-between;
+}
+#presentationcontainer{
+    position:fixed;
+     width:50%;
+     height:100%;
+     top: 0;
+     left: 0;
+     overflow: hidden;
+    justify-content: center;
+    align-items:first baseline;
+    align-content:flex-start;
+    z-index: -1;
+    display:flex;
+        &::before{
+            content:'';
+                position: absolute;
+                 background-image: url("../images/stock_moteurs.jpeg"); 
+                top:0px;
+                bottom:0px;
+                left:0px;
+                right:0px;
+                background-size:cover;
+                background-position:center;
+                opacity:0.7;
+        }
+   
+   
+
+}
+#presentation{
+    text-rendering: initial;
+    color:white;
+    text-align:left;
+    position:relative;
+    margin-top: 70px;
+    z-index: 1;
+}
+.textpresent{
+    position:relative;
+    font-weight:600;
+    font-size:large;
+    z-index: 1;
+    font-family: quicksand;
+}
+#Bienvenue{
+    position:relative;
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+#cnx{
+    padding:10px;
+    background-image: linear-gradient(43deg,#4169E1 30%,#4682B4 0%,hsl(177, 74%, 78%) 60%);
+    font-family: quicksand;
+    font-size:xx-large;
+    font-weight:bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    text-align: center;
+}
+#logcontainer{
+    padding-left:50%;
+
+}
+#connectform{
+    position:fixed;
+    padding-left:65%;
+    padding-right: 40%;
+    margin-top:170px;
+    align-items: center;
+    justify-content:center;
+    text-indent: 0cqmax;
+    align-content: center;
+}
+
+#connectform input{
+    display: block;
+    width:300px;
+    height:50px;
+    padding:20px 30px;
+    border-radius:5px;
+    border:2px solid #5ca1da;
+}
+
+#connectbutton{
+    width:fit-content;
+    height:fit-content;
+    padding-left: 200px;
+    display: flex; 
+    margin: auto;
+    padding:20px;
+    align-self: center;
+    justify-content: center;
+    align-content:center;
+    align-self: center;
+    border-radius:15px;
+    border:none;
+    text-align: center;
+    color:white;
+    z-index: -1;
+    font-size: medium;
+    background-image:linear-gradient(43deg,/*#4169E1 30%,*/#4682B4 0%,hsl(177, 74%, 78%) 60%);
+}
+
+button:hover{
+    opacity:0.7;
+}
+
+.error{
+    background:#F2DEDE;
+    color:#A94442;
+    padding:10px;
+    width:300px;
+    border-radius:5px;
+    text-align:center;
+}
+
+#logedusercontain{
+    position:absolute;
+    padding-inline-start:110px;
+    padding-inline-end: 90px;
+    padding-top: 80px;
+    position: relative;
+    width:100%;
+    height:20px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-content:center;
+    text-align:center;
+}
+
+#bonjouruser{
+    font-weight:light;
+    font-size: x-large;
+    background-image:linear-gradient(43deg,/*#4169E1 30%,*/#4682B4 0%,hsl(177, 74%, 78%) 60%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    display:inline-flex;
+    /*color:transparent;*/
+    
+}
+
+ #logout {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    float:left;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+    font-size: medium;
+    background: linear-gradient(43deg, #4682B4 0%, hsl(177, 74%, 78%) 60%), url('your-image-url.jpg');
+    background-size: cover; /* Adjust the background size as needed */
+}
+
+#logout:hover {
+    opacity: 0.7;
+}
+#sidebar{
+    position:absolute;
+    height:100dvh;
+    width:100px;
+    padding-block-start:50px;
+    padding-block-end: 20px;
+    padding-left: 5px;  
+ }
+ #sbcontainer{
+    display: grid;
+    align-items: center;
+    padding-left: 10px;
+ }
+ .sblogos{
+    height:60px;
+    width:60px;
+    padding-left:0px;
+    border-radius: 100%;
+ }
+ .sba{
+    padding-top:20px;
+    padding-bottom:20px;
+ }
+ .addformcontainer{
+    padding: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-self:center;
+    left:0;
+    right:0;
+    margin:0 auto;
+    height: fit-content;
+    width:1000px;
+    border: 2px solid #4169E1;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+
+
+#formscontainer{
+    padding-top: 90px;
+    width:100%;
+    margin:0 auto;
+    height: fit-content;
+    /*padding-left: 200px;
+    padding-right: 250px;*/
+    
+}
+
+ .addformtitle{
+    color:#4169E1;
+    margin-bottom: 20px;
+    font-size:xx-large;
+    font-weight: bolder;
+    padding-top: 10px;
+    align-content: center;
+ }
+ #addform{
+    margin:auto;
+    align-items: center;
+    margin-top: 20px;
+    justify-content:center;
+    text-indent: 0cqmax;
+    align-content: center;
+    align-self: center;
+    margin:0 auto;
+}
+
+#addform select{
+    display:inline;
+    width:300px;
+    height:50px;
+    border-radius:5px;
+    border:2px solid #5ca1da;
+    
+}
+
+#addform select option{
+    font-size: small;
+} 
+
+label{
+    margin-bottom: 5px;
+    color:#4169E1;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.container_input{
+    display:flex;
+    justify-content: space-between;
+}
+.input_group{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+.input_group label{
+    display:block;
+    padding:10px ;
+    font-size: medium;
+    font-weight: 500;
+    margin: 5px 0;
+    align-self: flex-start;
+}
+.input_group input{
+    display:block;
+    width:300px;
+    height:50px;
+    margin-top: 5px;
+    padding:10px ;
+    border-radius:5px;
+    border:2px solid #5ca1da;
+    outline:none;
+}
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  color: #4169E1;
+}
+
+  .single_input{
+    display:flex;
+    height:50px;
+    padding:20px 30px;
+    border-radius:5px;
+    border:2px solid #5ca1da;
+    outline:none;
+    margin-top:10px;
+  }
+  .single_label{
+    padding-top:20px 30px;
+  }
+  
+  #entreprise_rep {
+    width:700px; 
+    padding:10px;
+  }
+  .horizontal_line{
+    width:700px;
+    padding:0px;
+    align-self: center;
+  }
+ #message{
+    padding:10px;
+    color:gris;
+ }
+  .textadd{
+    padding:10px;
+    color:#4169E1;
+  }
+  #Libelle_repere{
+    width:700px;
+  }
+  textarea{ 
+    width:700px;
+    height:100px;
+    padding:10px ;
+    border-radius:5px;
+    border:2px solid #5ca1da;
+    outline:none;
+    margin-top:10px;  
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  #Libelle_chantier{
+    width:700px;
+  }
+
+  .addinput{
+    width:100px;
+    height:50px;
+    margin-left:500px;
+    display: flex; 
+    padding:10px;
+    align-self: center;
+    justify-content: center;
+    align-content:center;
+    border-radius:15px;
+    border:none;
+    text-align: center;
+    color:white;
+    z-index: -1;
+    font-size: large;
+    font-weight:500;
+    background-color:#4169E1;
+    text-decoration: none;
+  }
+  .addinput:hover{
+    opacity:0.7;
+}
+
+#skip{
+    margin-left: 5px;
+}
+#display_content{
+    padding-top:  5px;
+    padding-left: 150px;
+    height:fit-content;
+    width:fit-content;
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.moteurcard{
+    height:250px;
+    width:240px;
+    padding:20px;
+    margin:10px;
+    display: block;
+    box-shadow: 0px 0px 5px rgb(211, 199, 199);
+    /*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);*/
+    /*border: 1px solid rgb(187, 178, 178);
+    border-radius: 15px;*/
+}
+.moteurimage{
+    height:170px;
+    width:190px;
+    opacity:0.5;
+    z-index: -1;
+    padding:0px;
+    margin:0px;
+    padding-bottom: 6px;
+    background-color:rgb(211, 199, 199) ;
+    background-blend-mode: darken;
+}
+
+.moteur-checkbox {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #3b82f6; /* soft blue */
+}
+.moteurinfo{
+    height:fit-content;
+    width:fit-content;
+    /*box-shadow: 0px 5px 5px rgb(153, 144, 144);*/
+    z-index: 1;
+}
+.typeinfo{
+    color:#4169E1;
+    margin-bottom: 20px;
+    font-size:xx-large;
+    font-weight: bolder;
+    padding-top: 100px;
+    align-content: center;
+}
+
+#displaymotcontainer {
+    position:static;
+    z-index: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+    
+    
+}
+
+
+
+.groupcontain {
+    margin-bottom: 15px;
+}
+.rep&chant{
+    margin-top: 10px;
+}
+.fieldname {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+.value {
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#editform {
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    text-indent: 0cqmax;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+#editform select {
+    display: inline;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #5ca1da;
+}
+
+#editform select option {
+    font-size: small;
+}
+
+#editform input {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #5ca1da;
+    outline: none;
+}
+
+#editform textarea {
+    width: 700px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #5ca1da;
+    outline: none;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#editform label {
+    margin-bottom: 5px;
+    color: #4169E1;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.editformcontainer {
+    padding: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-self: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: fit-content;
+    width: 1000px;
+    border: 2px solid #4169E1;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.editformtitle {
+    color: #4169E1;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 10px;
+    align-content: center;
+}
+
+
